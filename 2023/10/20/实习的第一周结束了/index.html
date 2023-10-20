@@ -1,213 +1,217 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>实习的第一周结束了 | 音空Nesora</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="别人一放暑假就已经开始实习了，而我，虽然充满了焦虑，但是一直都不想去找，直到10月份之前我天天都瘫在家里至于为什么不找，一个是因为确实不想去上班，想再多享受以下假期另一个原因就是感觉自己做什么都不合适，打开求职软件，看着那些职位的工作内容和要求，总觉得自己根本做不了那种事情还有一个，就是因为对职场充满了恐惧。从小到大看过很多电视剧，再加上已经工作的同学的述说，总觉得公司是个可怕的地方。天天加班，9">
-<meta property="og:type" content="article">
-<meta property="og:title" content="实习的第一周结束了">
-<meta property="og:url" content="https://nesoraharuki.github.io/2023/10/20/%E5%AE%9E%E4%B9%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E5%91%A8%E7%BB%93%E6%9D%9F%E4%BA%86/index.html">
-<meta property="og:site_name" content="音空Nesora">
-<meta property="og:description" content="别人一放暑假就已经开始实习了，而我，虽然充满了焦虑，但是一直都不想去找，直到10月份之前我天天都瘫在家里至于为什么不找，一个是因为确实不想去上班，想再多享受以下假期另一个原因就是感觉自己做什么都不合适，打开求职软件，看着那些职位的工作内容和要求，总觉得自己根本做不了那种事情还有一个，就是因为对职场充满了恐惧。从小到大看过很多电视剧，再加上已经工作的同学的述说，总觉得公司是个可怕的地方。天天加班，9">
-<meta property="og:locale">
-<meta property="article:published_time" content="2023-10-20T11:07:09.000Z">
-<meta property="article:modified_time" content="2023-10-20T11:30:26.183Z">
-<meta property="article:author" content="Nesora">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="音空Nesora" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+    <meta charset="utf-8" />
+    <title>实习的第一周结束了 | 音空Nesora</title>
+    <meta name="author" content="Nesora" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="icon" href="/images/avatar.jpg" />
+    <link rel="preconnect" href="https://cdn.staticfile.org" />
+<script src="https://cdn.staticfile.org/vue/3.3.4/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.loli.net" />
+<link rel="preconnect" href="https://gstatic.loli.net" crossorigin />
+<link rel="stylesheet" href="https://fonts.loli.net/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" />
+<script> const mixins = {}; </script>
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-  
-  
+
+<script src="https://cdn.staticfile.org/highlight.js/11.8.0/highlight.min.js"></script>
+<script src="https://cdn.staticfile.org/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.staticfile.org/highlight.js/11.8.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
 <meta name="generator" content="Hexo 6.3.0"></head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">音空Nesora</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>音空NESORA</span>
+        </a>
         
-          <a class="main-nav-link" href="/">Home</a>
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
         
-      </nav>
-      <nav id="sub-nav">
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
         
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
         
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
         
-        <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://nesoraharuki.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;音空NESORA</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
 
-      <div class="outer">
-        <section id="main"><article id="post-实习的第一周结束了" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/10/20/%E5%AE%9E%E4%B9%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E5%91%A8%E7%BB%93%E6%9D%9F%E4%BA%86/" class="article-date">
-  <time class="dt-published" datetime="2023-10-20T11:07:09.000Z" itemprop="datePublished">2023-10-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>实习的第一周结束了</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/10/20
+        </span>
         
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      实习的第一周结束了
-    </h1>
-  
-
-      </header>
+        
+    </div>
     
-    <div class="e-content article-entry" itemprop="articleBody">
-      
+    <div class="content" v-pre>
         <p>别人一放暑假就已经开始实习了，而我，虽然充满了焦虑，但是一直都不想去找，直到10月份之前我天天都瘫在家里<br>至于为什么不找，一个是因为确实不想去上班，想再多享受以下假期<br>另一个原因就是感觉自己做什么都不合适，打开求职软件，看着那些职位的工作内容和要求，总觉得自己根本做不了那种事情<br>还有一个，就是因为对职场充满了恐惧。<br>从小到大看过很多电视剧，再加上已经工作的同学的述说，总觉得公司是个可怕的地方。天天加班，996，绷紧神经，拿着那一丁点的工资，做着多到离谱和工资完全不匹配的工作。<br>可是毕业的要求可不会管你那么多，所以我找了一家自己熟悉的公司。<br>从笔试到面试再到入职，这家公司出乎意料地温柔，让我觉得我确实是来实习的而不是来当韭菜的<br>（虽然工资确实也不怎么高就是了）<br>问他们加班的情况，他们的表情好像就是在说，“加班？那是什么”  看来确实不用担心加班的问题了。  </p>
 <h3 id="终于开始工作了"><a href="#终于开始工作了" class="headerlink" title="终于开始工作了"></a>终于开始工作了</h3><p>入职的前几天，我的焦虑情绪正常发挥。我之后会遇到什么样的事？会不会做的不够好？我真的有这个能力吗？<br>好在入职当天，负责带领我的几位正职人员都很亲切，紧张的心情一下子就没有了。<br>工作量说多也不是很多，有一个共享表格写着有哪些翻译等待校对，自己去找还没完成的去校对就好了。没有人会催你，换言之工作量也是“自己安排”<br>不过那天有一位编辑找上了我，让我紧急翻译了一篇新闻，还说让我负责一个专栏。<br>当晚这篇翻译发了出来，被改了一些些，但总体都还是我翻译的内容，松了一口气，还好没有搞砸。<br>总的来收，虽然工资很低，但总体上我这第一周做的也算开心，差不多就是半个青雀的状态，希望以后也可以保持这个状态吧  </p>
 <h4 id="走出舒适圈？不存在的，要走你走，换我进去。"><a href="#走出舒适圈？不存在的，要走你走，换我进去。" class="headerlink" title="走出舒适圈？不存在的，要走你走，换我进去。"></a>走出舒适圈？不存在的，要走你走，换我进去。</h4><p>不过也不是没有遇到问题<br>我的室友也在那里实习，第一周要是没有他，我绝对不可能那么快适应。<br>不过他说从宿舍到公司的时间太长了，打算改成线上实习，也就是说，下周起我要自己一个人在那了。<br>有点寂寞<br>还有一个问题，不知道物业到底在搞什么，已经申请5天了，楼下门禁的二维码到现在都还没给我<br>之前一直都是蹭室友的二维码，他走了之后我只能蹭路人的了，有点尴尬</p>
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="https://nesoraharuki.github.io/2023/10/20/%E5%AE%9E%E4%B9%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E5%91%A8%E7%BB%93%E6%9D%9F%E4%BA%86/" data-id="clnykrt4z0001egia3612cvc4" data-title="实习的第一周结束了" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
     
-<nav id="article-nav">
-  
-  
-    <a href="/2023/10/05/%E7%94%9F%E6%97%A5%E5%89%8D%E5%90%8E/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">记录一下生日前后</div>
-    </a>
-  
-</nav>
+    
+    
+    
+    
+    
+    
+</div>
 
-  
-</article>
-
-
-</section>
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2023 音空Nesora
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;Nesora
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li></ul>
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/10/20/%E5%AE%9E%E4%B9%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E5%91%A8%E7%BB%93%E6%9D%9F%E4%BA%86/">实习的第一周结束了</a>
-          </li>
-        
-          <li>
-            <a href="/2023/10/05/%E7%94%9F%E6%97%A5%E5%89%8D%E5%90%8E/">记录一下生日前后</a>
-          </li>
-        
-          <li>
-            <a href="/2023/10/04/test/">test</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 Nesora<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
 </footer>
 
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+    <script src="/js/main.js"></script>
+    
     
 
 
-<script src="/js/jquery-3.6.4.min.js"></script>
 
 
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
+    
 </body>
 </html>

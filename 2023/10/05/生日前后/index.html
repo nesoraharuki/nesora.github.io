@@ -1,220 +1,215 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>记录一下生日前后 | 音空Nesora</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="本来只是去个痛车展见识一下，听说会有很多人，简直是不要社恐挑战。去到之后，朋友一直跟在场的其他人打招呼聊天。这些人我都不认识，只能站在一旁用玩手机来掩盖自己的尴尬。感觉自己挺奇怪的，是社恐，但又跟别的社恐不太一样。有时候我可以很自然地跟之前不认识的人说上话甚至熟络起来（虽然之后都没怎么联系），可以很自然地加入话题，打成一片。但有时候我完全说不上话，他们也没有要跟我说话的意思，所以我就只能保持沉默，">
-<meta property="og:type" content="article">
-<meta property="og:title" content="记录一下生日前后">
-<meta property="og:url" content="https://nesoraharuki.github.io/2023/10/05/%E7%94%9F%E6%97%A5%E5%89%8D%E5%90%8E/index.html">
-<meta property="og:site_name" content="音空Nesora">
-<meta property="og:description" content="本来只是去个痛车展见识一下，听说会有很多人，简直是不要社恐挑战。去到之后，朋友一直跟在场的其他人打招呼聊天。这些人我都不认识，只能站在一旁用玩手机来掩盖自己的尴尬。感觉自己挺奇怪的，是社恐，但又跟别的社恐不太一样。有时候我可以很自然地跟之前不认识的人说上话甚至熟络起来（虽然之后都没怎么联系），可以很自然地加入话题，打成一片。但有时候我完全说不上话，他们也没有要跟我说话的意思，所以我就只能保持沉默，">
-<meta property="og:locale">
-<meta property="article:published_time" content="2023-10-05T05:21:33.000Z">
-<meta property="article:modified_time" content="2023-10-05T05:33:25.203Z">
-<meta property="article:author" content="Nesora">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="音空Nesora" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+    <meta charset="utf-8" />
+    <title>记录一下生日前后 | 音空Nesora</title>
+    <meta name="author" content="Nesora" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="icon" href="/images/avatar.jpg" />
+    <link rel="preconnect" href="https://cdn.staticfile.org" />
+<script src="https://cdn.staticfile.org/vue/3.3.4/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.loli.net" />
+<link rel="preconnect" href="https://gstatic.loli.net" crossorigin />
+<link rel="stylesheet" href="https://fonts.loli.net/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" />
+<script> const mixins = {}; </script>
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-  
-  
+
+<script src="https://cdn.staticfile.org/highlight.js/11.8.0/highlight.min.js"></script>
+<script src="https://cdn.staticfile.org/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.staticfile.org/highlight.js/11.8.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
 <meta name="generator" content="Hexo 6.3.0"></head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">音空Nesora</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>音空NESORA</span>
+        </a>
         
-          <a class="main-nav-link" href="/">Home</a>
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
         
-      </nav>
-      <nav id="sub-nav">
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
         
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
         
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
         
-        <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://nesoraharuki.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;音空NESORA</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
 
-      <div class="outer">
-        <section id="main"><article id="post-生日前后" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/10/05/%E7%94%9F%E6%97%A5%E5%89%8D%E5%90%8E/" class="article-date">
-  <time class="dt-published" datetime="2023-10-05T05:21:33.000Z" itemprop="datePublished">2023-10-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>记录一下生日前后</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/10/5
+        </span>
         
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      记录一下生日前后
-    </h1>
-  
-
-      </header>
+        
+    </div>
     
-    <div class="e-content article-entry" itemprop="articleBody">
-      
+    <div class="content" v-pre>
         <p>本来只是去个痛车展见识一下，听说会有很多人，简直是不要社恐挑战。<br>去到之后，朋友一直跟在场的其他人打招呼聊天。这些人我都不认识，只能站在一旁用玩手机来掩盖自己的尴尬。<br>感觉自己挺奇怪的，是社恐，但又跟别的社恐不太一样。有时候我可以很自然地跟之前不认识的人说上话甚至熟络起来（虽然之后都没怎么联系），可以很自然地加入话题，打成一片。但有时候我完全说不上话，他们也没有要跟我说话的意思，所以我就只能保持沉默，当个透明人。<br>到了最后合照，我其实并不打算加入，因为他们跟我不熟。好在我被朋友拉了进来，合照之后，我才鼓起勇气去扩了列。如果没有他，估计到最后我都会一直透明下去吧。<br>傍晚，我跟着剩下的几个人（认识过但没怎么说过话）一起去了隔壁的商场吃饭。其中一个大佬可能见我一直不说话，便开始跟我聊天，慢慢地我也不再那么沉默了。<br>之后大家一起去唱了k，在机厅打了一晚的mai，感觉自己总算不是个透明人了。<br>到了生日前半小时，我说了一句我还有半个钟就生日了，没想到他们会拉我到隔壁的吧台，给我点了个小蛋糕，还唱了生日歌。<br>那时感觉自己挺幸福的，因为从小到大，从没试过有那么多朋友一起跟我度过生日的0点。而且因为是在国庆期间，大家可能都有自己的计划，不会陪我过生日。每次临近生日我都会很焦虑，生怕除了家人外生日就只能自己一个人过。今年真的让我很意外。<br>许愿的时候，嘴上说是没什么愿望。但其实我最大的愿望，就是让自己不那么社恐，能多交点朋友。<br>以上。</p>
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="https://nesoraharuki.github.io/2023/10/05/%E7%94%9F%E6%97%A5%E5%89%8D%E5%90%8E/" data-id="clnykrt4z0002egiab9xe4lll" data-title="记录一下生日前后" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
     
-<nav id="article-nav">
-  
-    <a href="/2023/10/20/%E5%AE%9E%E4%B9%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E5%91%A8%E7%BB%93%E6%9D%9F%E4%BA%86/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Neuer</strong>
-      <div class="article-nav-title">
+    
+    
+    
+    
+    
+    
+</div>
+
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2023 音空Nesora
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;Nesora
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
         
-          实习的第一周结束了
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2023/10/04/test/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">test</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li></ul>
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/10/20/%E5%AE%9E%E4%B9%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E5%91%A8%E7%BB%93%E6%9D%9F%E4%BA%86/">实习的第一周结束了</a>
-          </li>
-        
-          <li>
-            <a href="/2023/10/05/%E7%94%9F%E6%97%A5%E5%89%8D%E5%90%8E/">记录一下生日前后</a>
-          </li>
-        
-          <li>
-            <a href="/2023/10/04/test/">test</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 Nesora<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
 </footer>
 
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+    <script src="/js/main.js"></script>
+    
     
 
 
-<script src="/js/jquery-3.6.4.min.js"></script>
 
 
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
+    
 </body>
 </html>
